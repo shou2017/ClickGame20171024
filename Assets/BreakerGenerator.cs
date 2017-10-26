@@ -13,7 +13,7 @@ public class BreakerGenerator : MonoBehaviour {
 
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             Vector3 worldDir = ray.direction;
-            Breaker.GetComponent<Breaker>().shoot(worldDir.normalized * 2000);
+            Breaker.GetComponent<Breaker>().shoot(worldDir.normalized * 10000);
         }
     }
 }
